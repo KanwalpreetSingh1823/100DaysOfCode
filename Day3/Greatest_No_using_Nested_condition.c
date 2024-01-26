@@ -9,18 +9,18 @@ int main()
     printf("Enter 3rd number : ");
     scanf("%d", &c);
     if(a>b){
-        if(a>c){ // b is out of race
+        if(a>c){ 
             printf("%d is greatest",a);
         }
-        else{ // b < a < c
+        else{ 
             printf("%d is greatest",c);
         }
     }
-    else{ // b > a --> a is not greater from both.
+    else{ 
         if(b>c){
             printf("%d is greatest",b);
         }
-        else{ // a < b < c
+        else{ 
             printf("%d is greatest",c);
         }
     }
