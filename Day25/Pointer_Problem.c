@@ -1,5 +1,5 @@
 #include<stdio.h>
-void update(int* x,int* y){
+void update(int* x,int* y){ // HackerRank Problem
     int temp = *x;
     *x = *x + *y;
     *y = *y - temp;
