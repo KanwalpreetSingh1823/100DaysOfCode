@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int t;                    // Car or Bus
+    int t;                    // Codechef Problem
     scanf("%d",&t);
     while(t--){
         int x,y;
