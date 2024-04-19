@@ -25,6 +25,6 @@ int main(){
     for(int i=0; i<n; i++){
         printf("%d ",arr[i]);
     }
-    printf("\n%d",c);
+    printf("\nNumber of Passes : %d",c);
     return 0;
 }
