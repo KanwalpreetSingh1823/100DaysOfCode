@@ -9,21 +9,21 @@ struct triangle                         // HackerRank Problem
 	int c;
 };
 
-typedef struct triangle triangle;
+typedef struct triangle triangle;                
 void sort_by_area(triangle* tr, int n) {
-    double s,p;
+    double s,p;                          
     double arr[n];
-    triangle temp_area;   
+    triangle temp_area;   // Declearing new object of triangle structure
 	for(int i=0; i<n; i++){
         s=0;                            
         p = (tr[i].a+tr[i].b+tr[i].c)/2.0;
         s = sqrt(p * (p-tr[i].a) * (p-tr[i].b) * (p-tr[i].c));
         arr[i] = s;                     
     }
-    for(int i=1; i<n; i++){  
+    for(int i=1; i<n; i++){               
         int j=i;
-        while(j>0 && arr[j] < arr[j-1]){
-            double temp = arr[j];
+        while(j>0 && arr[j] < arr[j-1]){   // Applying Insertion Sort
+            double temp = arr[j];          // Swap
             arr[j] = arr[j-1];
             arr[j-1] = temp;
             
